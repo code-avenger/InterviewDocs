@@ -1,4 +1,0 @@
-#Var vs Let
-
-If you are accessing the "var" before declaring it, then it will perind undefinded. But if accessing the "let" variable before declaring, will get error saying "var_name is not defined".
-
