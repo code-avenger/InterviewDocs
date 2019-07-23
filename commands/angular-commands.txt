@@ -22,6 +22,12 @@
 	Protractor end-to-end test runner will be configured
 	environment files will be created
 	
+#Build the application
+	
+	ng build 
+		this will generate a dist folder in homepath which contains a folder with the similar name to application. Copy this folder to any server, then open index.html from that folder.
+
+	
 #Run Application
  Change to the my-project directory and run the following:
 
@@ -43,24 +49,37 @@
 	To create a new class, run the following:
 
 	ng g class my-class-a
-	This will create a file called my-class-a.ts under the src/app directory. 
+		This will create a file called my-class-a.ts under the src/app directory. 
 	
 #Create An Interface
 	To create a new interface, run the following:
 
 	ng g interface my-interface-a
-	This will create a file called my-interface-a.ts under the src/app directory. 
+		This will create a file called my-interface-a.ts under the src/app directory. 
 
 #Create An Enumeration
 	To create a new enumeration, run the following:
 
 	ng g enum my-num
-	This will create a file called my-enum.enum.ts under the src/app directory. 
+		This will create a file called my-enum.enum.ts under the src/app directory. 
+		
+		
+#Dry run
+
+ng g component my-component --dry--run
+	This won't create component but show what all the files are going to create
+	
+	
+#Wthout spec file i.e. test file
+
+ng g component my-component --spec false
+	This created component but not spec.ts file which is meant for unit test file.
 
 #Create A Component
 	To create a new component, run the following:
 
 	ng g component my-component-a
+	
 	This will do several things:
 
 	create a directory called my-component-a under src/app directory
@@ -124,7 +143,3 @@
 	generate all the component files under this directory (see Create a component section for description of files)
 	add MySubcomponentAComponent to the my-module-a.module.ts file
 	
-#Build the application
-	
-	ng build 
-		this will generate a dist folder in homepath which contains a folder with the similar name to application. Copy this folder to any server, then open index.html from that folder.
