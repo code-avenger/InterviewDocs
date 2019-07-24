@@ -25,4 +25,6 @@ public class AccountEntity implements Serializable
     private String accountNumber;
  
     //Getters and setters
+	
+	// GenerationType are IDENTITY, AUTO, SEQUENCE
 }
