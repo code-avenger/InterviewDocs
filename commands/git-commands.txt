@@ -14,6 +14,9 @@ git push -u origin master
 git init															//Initialize a local Git repository
 git clone ssh://git@github.com/[username]/[repository-name].git	 	//Create a local copy of a remote repository
 
+rm -rf .git														//uninitialize git repo in linux
+rmdir .git										//uninitialize git repo in windows
+
 
 #Basic Snapshotting
 

@@ -60,9 +60,11 @@ docker attach <container_id>
 
 docker run -p 8080:8080 -p 8001:8001 -d --name drools-workbench jboss/drools-workbench-showcase:latest
 http://localhost:8080/business-central
+admin / admin
 
-docker run -p 8180:8180 -d --name kie-server --link drools-workbench:kie-wb jboss/kie-server-showcase:latest
-http://localhost:8180/kie-server
+docker run -p 8180:8080 -d --name kie-server --link drools-workbench:kie-wb jboss/kie-server-showcase:latest
+http://localhost:8180/kie-server/services/rest/server/
+kieserver / kieserver1!
 
 
 
