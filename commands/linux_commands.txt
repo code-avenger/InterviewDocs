@@ -21,6 +21,15 @@
 #Firewall Reload
 	firewall-cmd -q --reload
 	
+#Enable Firewalld
+	systemctl enable firewalld
+
+#Start Firewalld
+	systemctl start firewalld
+
+#Check the Status of Firewalld
+	systemctl status firewalld
+	
 #host port is listening or not
 	netstat -ant | grep 5000
 	
